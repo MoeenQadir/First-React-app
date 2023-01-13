@@ -1,0 +1,11 @@
+.hero{
+    background-color: black;
+    color: white;
+}
+.image{
+    height: 90vh;
+}
+.data{
+    margin-top: 150px;
+    margin-left: 80px;
+}

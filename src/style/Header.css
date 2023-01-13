@@ -1,0 +1,19 @@
+.mybar{
+    background-color: black;
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.logo{
+    font-size: 30px;
+    font-family: "Noto Sans";
+}
+.nav-items>Nav{
+    font-family: "Noto Sans";
+    justify-content: space-between;
+    color: #ffffff;
+    gap: 10px;
+}
