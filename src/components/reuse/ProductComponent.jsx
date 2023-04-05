@@ -21,35 +21,6 @@ export const Single_list = ({product}) => {
     );
 }
 
-
-export const Single_Description = ({product}) => {
-    return (
-        <>
-            <div className="productdescriptions">
-                <div className="left">
-                    <img className="h-auto left-image mb-28 rounded-lg max-w-full " src={product.image}
-                         alt="image description"/>
-
-                    <p className="mb-28 text-xl tracking-tight text-gray-900 dark:text-white">
-                        Description : {product.description}</p>
-
-                </div>
-                <div className="right">
-                    <a href="#">
-                        <h5 className="mb-10 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Category : {product.category}</h5>
-                    </a>
-                    <a href="#">
-                        <h5 className="mb-10 text-4xl  tracking-tight text-gray-900 dark:text-white">
-                            Title : {product.title}</h5>
-                    </a>
-
-                </div>
-            </div>
-        </>
-    )
-}
-
 export const List = ({product}) => {
     return (
         <div
@@ -58,7 +29,7 @@ export const List = ({product}) => {
             <img className="h-auto productimage rounded-lg max-w-full mb-5" src={product.image}
                  alt="image description"/>
 
-            <Link to="/product-description"
+            <Link to={`/product/${product.id}`}
                   className="inline-flex producttitle items-center px-3 py-2 text-sm font-semibold text-center text-black  rounded-lg hover:bg-blue-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 {product.title}
                 <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
