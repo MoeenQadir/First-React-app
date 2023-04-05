@@ -1,0 +1,24 @@
+.productimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 50px auto;
+}
+.productcontainer{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+.producttitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+    height: auto;
+    margin-bottom:300px;
+}
