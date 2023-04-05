@@ -1,6 +1,12 @@
 {
-  "name": "firstproject",
+  "name": "ecommerce-appp",
   "version": "0.1.0",
+  "description": "Ecommerce app for pakistanis for free to use.",
+  "author": "fahad-qureshi, Moeen Khan",
+  "email": "cto@fastechsystem.com, myselfxdeveloper@gmail.com",
+  "url": "http://ecommerceappfastech.com",
+  "keywords": ["Ecommerce", "E-Commerce", "Pakistan Ecommerce", "Online Earning App"],
+  "license": "FASTECHSYSTEMS",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
