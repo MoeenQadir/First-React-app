@@ -1,4 +1,4 @@
-const BASE_URL_ECOMMERCE = process.env.BASE_URL
+const BASE_URL_ECOMMERCE = 'https://fakestoreapi.com'
 export const APIs = {
     STORE: {
         PRODUCTS: {

@@ -1,13 +1,21 @@
 import '../styles/productcategory.css'
 import {useEffect, useState} from "react";
 import {Single_list} from "./reuse/ProductComponent";
-import {fetchProductsService} from "./context/ApplicationDataContext";
+import axios from "axios";
+import {APIs} from "../const/APIs";
 
 
 function ProductCategory() {
     const [data, setData] = useState([]);
+    const fetchProductsService = async () => {
+        await axios.get(APIs.STORE.PRODUCTS.GET_ALL)
+            .then(response => {
+                setData(response.data)            })
+            .catch(error => {
+            });
+    }
     useEffect(() => {
-        setData(fetchProductsService)
+        fetchProductsService()
     }, []);
 
 
