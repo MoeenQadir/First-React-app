@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import ProductCategory from "./components/ProductCategory";
 import ProductList from "./components/ProductList";
-import {Link,BrowserRouter  as Router,Routes, Route} from "react-router-dom";
+import {BrowserRouter  as Router,Routes, Route} from "react-router-dom";
 import Home from "./components/Home";
 import ProductDescription from "./components/ProductDescription";
 function App() {
@@ -14,9 +14,9 @@ function App() {
             <Navbar/>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
-                <Route path={"/productlist"} element={<ProductList/>}/>
-                <Route path={"/productcategory"} element={<ProductCategory/>}/>
-                <Route path={"/productdescription"} element={<ProductDescription/>}/>
+                <Route path={"/product-list"} element={<ProductList/>}/>
+                <Route path={"/product-category"} element={<ProductCategory/>}/>
+                <Route path={"/product-description"} element={<ProductDescription/>}/>
             </Routes>
         </Router>
     </div>
